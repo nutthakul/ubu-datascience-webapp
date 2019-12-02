@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+    <head>
+    </head>
+    <body>
+        <h1>Welcome to matmul</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div>
+            <span>Matrix A:</span>
+            <textarea rows=6 cols="60" name="A">{{A}}</textarea>
+            <span>Matrix B:</span>
+            <textarea rows=6 cols="60" name="B">{{B}}
+            </textarea>
+        </div>
+         <div>   
+             <button type="submit">Multiply</button>
+        </div>
+        </form>
+        <div>
+            <textarea role="6" cols="60" name="C">
+                {{C}}
+            </textarea>
+        </div>
+        <div style="text-align: center;">
+            <table border="1">
+                {% for r in C %}
+                <tr>
+                    {% for c in r %}
+                    <td>{{c}}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </body>
+=======
+<head>
+
+</head>
+<body>
+    <h1>
+        We Love Linux V.2
+    </h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div>
+    <span>Matrix A:</span>
+    <textarea rows="6" cols="30" name = 'A'>{{A}}</textarea>
+    <span>Matrix B:</span>
+    <textarea rows="6" cols="30" name = 'B'>{{B}}</textarea>
+    </div>
+    <div>
+        <button type="submit">multiply</button>
+    </div>
+</form>
+<div>
+    <textarea role="6" cols="30" name="C">
+        {{C}}
+
+    </textarea>
+</div>
+<div>
+    <table border="1">
+        {%for r in C %}
+        <tr>
+            {%for c in r %}
+            <td>{{c}}</td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+</body>
+>>>>>>> fbf814356bbb70507c17aeb2011dae735fb057d3
+</html>
