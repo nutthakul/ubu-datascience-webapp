@@ -15,12 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-<<<<<<< HEAD
 from myapp import views 
 
-=======
-from myapp import views
->>>>>>> fbf814356bbb70507c17aeb2011dae735fb057d3
 urlpatterns = [
     path('matmul',views.matmul),
     path('admin/', admin.site.urls),
